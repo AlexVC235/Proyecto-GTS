@@ -1,0 +1,60 @@
+.cookie-consent-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Cambiado de center a flex-start */
+  padding-top: 100px; /* Ajusta la distancia desde arriba */
+  z-index: 1000;
+}
+
+.cookie-consent-modal {
+  background-color: #ffffff;
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  line-height: 1.6; /* Ajusta la separación entre líneas */
+  font-size: 16px; /* Ajusta el tamaño de fuente */
+}
+
+.cookie-consent-modal h2 {
+  font-size: 18px; /* Ajusta el tamaño del encabezado */
+  font-weight: bold;
+  margin-bottom: 10px; /* Espaciado debajo del encabezado */
+  text-align: left;
+}
+
+.cookie-consent-modal p {
+  font-size: 14px; /* Ajusta el tamaño del texto */
+  margin-bottom: 15px; /* Espaciado entre párrafos */
+  text-align: justify; /* Alinea el texto a ambos lados */
+}
+
+.cookie-consent-modal a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none;
+}
+
+.cookie-consent-modal a:hover {
+  text-decoration: underline;
+}
+
+.accept-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.accept-btn:hover {
+  background-color: #c9302c;
+}

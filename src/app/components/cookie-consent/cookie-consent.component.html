@@ -1,0 +1,18 @@
+<div class="cookie-consent-overlay" *ngIf="showModal">
+  <div class="cookie-consent-modal">
+    <h2>Contenido sólo para adultos</h2>
+    <p>
+      Para seguir navegando has de ser mayor de 18 años.<br />
+      Si eres menor de edad, has de <a href="#">salir de la web</a>.
+    </p>
+    <h2>Uso de cookies</h2>
+    <p>
+      Utilizamos cookies propias y de terceros para realizar estadísticas de uso
+      con la finalidad de identificar fallos, mejorar los contenidos y la
+      configuración de la web, así como para recordar algunas opciones que hayas
+      elegido para facilitarte la navegación. Puedes obtener más información en
+      nuestra <a href="#">Política de cookies</a>.
+    </p>
+    <button class="accept-btn" (click)="acceptConsent()">Aceptar</button>
+  </div>
+</div>

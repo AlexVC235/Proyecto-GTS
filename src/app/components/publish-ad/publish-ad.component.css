@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  background-color: #F4F4F4;
+  font-family: Arial;
+  font-size: 13px;
+  color: #303030
+}
+
+.bloque {
+  color: #303030;
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 20px;
+  position: relative;
+  font-size: 15px;
+  border: 1px solid #D0D0D0;
+  border-radius: 0
+}
+
+p.explicacion {
+  color: #303030;
+  font-size: 17px;
+  margin-top: 0;
+  padding-bottom: 0px!important;
+  margin-bottom: 20px!important;
+  text-align: initial
+}
+
+.landing_container p.explicacion {
+  padding-bottom: 5px
+}
+
+#content .bloque:first-child:not(.bloque_geo,.bloque_categorias_bloque_10,.bloque_categorias_bloque_11) {
+  margin-top: 0
+}
+
+html.form_login #ficha_edicion .bloque .titulo,.bloque .titulo,html.mic_search #blocked_mic_lightbox span.titulo {
+  margin-top: 0;
+  font-size: 25px;
+  font-weight: 400;
+  color: #CA1E25;
+  display: block;
+  margin-bottom: 25px
+}
+
+#content {
+  position: relative;
+  width: 94%;
+  width: calc(100% - 28px);
+  max-width: 940px;
+  padding: 2%;
+  padding: calc(14px);
+  margin: 0 auto;
+  background-color: inherit
+}
+
+#content>.bloque_login {
+  margin-left: auto;
+  margin-right: auto
+}
+
+#content .bloque_login {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 400px
+}
+
+div#btn_login {
+  margin-top: 5px!important;
+  margin-bottom: 25px!important
+}
+
+#botones_panel {
+  position: relative;
+  padding-right: 21px;
+  padding-top: 0;
+  text-align: center
+}
+
+#content #botones_panel .boton_panel_login {
+  width: 100%!important;
+  box-sizing: content-box
+}
+
+#content .bloque_login .titulo {
+  display: block;
+  margin-bottom: 17px;
+  text-align: left
+}
+
+/* Cabecera */
+#header {
+  z-index: 1000;
+}
+
+#cabecera {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #E8E8E8;
+  text-align: center;
+  z-index: 1000;
+}
+
+#div_logo {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  z-index: 1;
+}
+
+#logo {
+  border: 0;
+  height: 36px;
+}
+
+#menu_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+}
+
+#menu_button:hover {
+  color: #CA1E25;
+}
+
+/* #cabecera {
+  font-size: 14px
+} */
+
+#cabecera .cabecera_sup {
+  position: relative;
+  height: 50px
+}
+
+#cabecera .cabecera_sub {
+  height: 0
+}
+
+#cabecera #publicar,#cabecera #login {
+  position: absolute;
+  top: -52px;
+  color: #0072C6;
+  background-color: transparent;
+  display: inline-block;
+  width: 64px;
+  font-size: 56px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0;
+  text-align: left
+}
+
+#cabecera #publicar,#cabecera #login {
+  margin: 0px!important
+}
+
+#cabecera #publicar {
+  right: 136px;
+  cursor: pointer
+}
+
+#cabecera #login {
+  right: 70px;
+  line-height: 36px;
+  cursor: pointer
+}
+
+#cabecera #login img {
+  width: 64px;
+  height: 42px;
+  vertical-align: bottom
+}
+
+@media screen and (max-width: 1664px) {
+  #cabecera #publicar {
+      right:132px
+  }
+
+  #cabecera #login {
+      right: 66px
+  }
+}
+
+#cabecera #publicar,#cabecera #login {
+  top: -52px
+}
+
+#cabecera #publicar {
+  right: 120px
+}
+
+#cabecera #login {
+  right: 61px
+}
+
+@media screen and (max-width: 800px) {
+  #cabecera .cabecera_sup {
+      height:40px
+  }
+
+  #cabecera_sup_gen #link_home {
+      margin-top: 7px
+  }
+
+  #cabecera #publicar,#cabecera #login {
+      top: -40px
+  }
+
+  #cabecera #login {
+      top: -42px;
+      right: 12px
+  }
+
+  #cabecera #login img {
+      width: 26px;
+      height: 30px
+  }
+
+  #cabecera #publicar {
+      width: 45px;
+      height: 40px;
+      right: 79px;
+      font-size: 34px;
+      line-height: 40px;
+      text-align: center
+  }
+
+  .borderDesplegable {
+      border-bottom: 1px solid #D0D0D0
+  }
+}
+
+.boton_grande,.bloque .boton.boton_grande,.bloque input[type="button"].boton_grande,input[type="button"].boton_grande,.bloque input[type="submit"].boton_grande,input[type="submit"].boton_grande,button.boton_grande {
+  font-size: 18px!important;
+  font-weight: 400;
+  display: inline-block;
+  background-color: #CA1E25;
+  color: white!important;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0 10px;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px!important;
+  border-radius: 3px
+}
+
+@media screen and (max-width: 800px) {
+  #content {
+      box-sizing:border-box;
+      width: 100%;
+      right: 0
+  }
+
+  #content .bloque_login {
+      width: calc(100% - 15px)
+  }
+}

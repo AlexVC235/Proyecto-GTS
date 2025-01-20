@@ -1,0 +1,365 @@
+body {
+  margin: 0;
+  background-color: #F4F4F4;
+  font-family: Arial;
+  font-size: 13px;
+  color: #303030
+}
+
+.titulo.titulo_txt {
+  margin-bottom: 20px
+}
+
+p.titulo_lista_ulol {
+  font-weight: 700;
+  margin-top: 20px
+}
+
+.bloque .link {
+  color: inherit;
+  text-decoration: underline
+}
+
+.bloque .enlace {
+  color: #0072C6;
+  text-decoration: underline
+}
+
+#header {
+  z-index: 1000
+}
+
+#cabecera {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #E8E8E8;
+  text-align: center;
+  z-index: 1000
+}
+
+#cabecera .cabecera_sup {
+  position: relative;
+  height: 50px
+}
+
+#cabecera .cabecera_sub {
+  position: relative;
+  height: 39px
+}
+
+#cabecera h1 {
+  color: #303030;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 39px
+}
+
+#cabecera_sup_buscar {
+  text-align: left
+}
+
+#div_logo {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  z-index: 1;
+}
+
+#logo {
+  border: 0;
+  height: 36px;
+}
+
+#menu_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+}
+
+#menu_button:hover {
+  color: #CA1E25;
+}
+
+.bloque {
+  color: #303030;
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 20px;
+  position: relative;
+  font-size: 15px;
+  border: 1px solid #D0D0D0;
+  border-radius: 0
+}
+
+#content .bloque:first-child:not(.bloque_geo,.bloque_categorias_bloque_10,.bloque_categorias_bloque_11) {
+  margin-top: 0
+}
+
+#content {
+  width: 100%;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0
+}
+
+#about_container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 940px
+}
+
+#about_menu {
+  width: 160px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 27px;
+  /* float: left */
+}
+
+#about_menu ul {
+  padding: 0;
+  margin: 0
+}
+
+#about_menu li {
+  list-style: none;
+  padding: 0;
+  padding-top: 20px
+}
+
+#about_container .about_fin {
+  clear: both;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  visibility: hidden
+}
+
+#about_content {
+  width: 100%;
+  max-width: 645px;
+  width: calc(100% - 295px);
+  display: inline-block;
+  vertical-align: top;
+  /* float: right; */
+  margin-right: 10px;
+  margin-bottom: 15px
+}
+
+#about_content h1,#about_content h2 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 25px;
+  margin-top: 35px
+}
+
+#about_content h1:first-of-type,#about_content h2:first-of-type {
+  margin-top: 0
+}
+
+#about_content p {
+  line-height: 20px;
+  margin: 20px 0
+}
+
+.about_container_centrado {
+  text-align: center
+}
+
+.about_container_centrado .bloque {
+  float: none!important;
+  text-align: left
+}
+
+#about_content h1:first-of-type {
+  margin-top: 0
+}
+
+#about_content h1,#about_content h1 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 25px
+}
+
+#about_content span.span_titulos {
+  font-weight: 400;
+  margin: 0;
+  font-size: 25px;
+  margin-top: 35px
+}
+
+#content input[type="button"] {
+  width: 145px;
+  line-height: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  height: 40px
+}
+
+#about_content a {
+  font: normal arial;
+  color: #000;
+  text-decoration: underline;
+  word-break: break-all
+}
+
+#about_content a.contact {
+  word-break: auto-phrase
+}
+
+#about_content ul li {
+  margin-bottom: 5px;
+  font: normal 15px arial;
+  color: #000;
+  text-align: justify
+}
+
+#about_content .apartado_n1_ {
+  margin-top: 25px;
+  font: bold 18px arial;
+  color: #CA1E25
+}
+
+#about_content li.apartado_n1_ {
+  margin: 20px 0 20px 0;
+  padding: 0
+}
+
+#about_content .apartado_n2_ {
+  margin-top: 25px;
+  font: normal 17px arial;
+  color: #CA1E25
+}
+
+#about_content .apartado_n1_+.apartado_n2_ {
+  margin-top: 15px
+}
+
+#about_content .apartado_n2_+.apartado_n3_ {
+  margin-top: 15px
+}
+
+#about_content .apartado_n3_+.apartado_n4_ {
+  margin-top: 15px
+}
+
+#about_content .apartado_n3_+ul li .apartado_n4_ {
+  margin-top: 15px
+}
+
+#about_content .olSuperior p .anchor {
+  font: normal 15px arial;
+  color: #CA1E25;
+  text-decoration: none;
+  margin: 15px o
+}
+
+#about_content .apartado_n3_ {
+  margin-top: 25px;
+  font: 16px arial;
+  color: #CA1E25
+}
+
+#about_content li.apartado_n3_ {
+  margin: 0 0 15px 0;
+  padding: 0
+}
+
+.tablaCookies,.tablaTextosLegales {
+  padding-bottom: 3px;
+  padding-top: 3px;
+  font-family: arial,sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #000
+}
+
+.tablaCookies td,.tablaTextosLegales td {
+  font-weight: 400
+}
+
+.scrolling-wrapper .tablaCookies td,.scrolling-wrapper .tablaTextosLegales td {
+  vertical-align: top
+}
+
+.tablaCookies td,.tablaCookies th,.tablaTextosLegales td,.tablaTextosLegales th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px
+}
+
+.tablaCookies th,.tablaTextosLegales th {
+  text-align: center;
+  background-color: #CA1E25;
+  color: #fff;
+  font-weight: 400
+}
+
+.tablaCookies th p,.tablaTextosLegales th p {
+  color: white!important
+}
+
+.tablaCookies p,.tablaTextosLegales p {
+  margin: 6px 0!important
+}
+
+.anchor {
+  text-decoration: underline
+}
+
+.anchor:hover {
+  cursor: pointer
+}
+
+.olSuperior {
+  margin-top: 25px;
+  margin-bottom: 35px
+}
+
+.bloque_condiciones {
+  padding: 0px!important;
+  margin: 20px 0 5px 0px!important;
+  border: none!important
+}
+
+.bloque_condiciones #publicar_condiciones {
+  width: auto!important;
+  height: auto!important;
+  margin: 0!important;
+  margin-right: 10px!important;
+  border: 0!important;
+  padding: 0!important;
+  border-radius: 0!important;
+  vertical-align: middle
+}
+
+.bloque_condiciones label {
+  font-size: 13px!important;
+  width: auto!important;
+  display: inline!important;
+  text-align: left!important;
+  margin: 0!important;
+  vertical-align: middle!important;
+  height: auto!important;
+  line-height: normal!important
+}
+
+.bloque_condiciones a {
+  text-decoration: underline
+}

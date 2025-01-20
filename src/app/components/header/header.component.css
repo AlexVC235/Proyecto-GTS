@@ -1,0 +1,304 @@
+/* Estilos generales */
+.navbar {
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Asegura que padding no cause overflow */
+}
+
+/* Línea 1: Logo + Publicar Anuncio y otras opciones */
+.navbar-top {
+  display: flex;
+  justify-content: space-between; /* Distribuir logo a la izquierda y opciones a la derecha */
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand img {
+  max-width: 150px; /* Ajustar tamaño del logo para que no ocupe mucho espacio */
+}
+
+.navbar-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.publish-ad-btn {
+  background-color: #ff5555;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.favorites {
+  display: flex;
+  align-items: center;
+}
+
+.pi-heart-fill {
+  color: #ff5555;
+  margin-left: 5px;
+}
+
+.pi-bars {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Línea 2: Categorías y Sexo */
+.navbar-middle {
+  display: flex;
+  justify-content: space-between; /* Separar categorías de sexo */
+  margin-top: 10px;
+  width: 100%;
+  flex-wrap: wrap; /* Para evitar que se desborde en pantallas pequeñas */
+}
+
+.navbar-categories, .navbar-gender {
+  display: flex;
+  align-items: center;
+}
+
+.category-btn, .gender-btn {
+  background-color: #e8e8e8;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #ff5555;
+  color: #fff;
+}
+
+/* Línea 3: Búsqueda */
+.navbar-search {
+  display: flex;
+  justify-content: space-between; /* Ajustar la distribución de la búsqueda */
+  margin-top: 10px;
+  width: 100%;
+}
+
+.search-group {
+  display: flex;
+  gap: 10px; /* Añadimos espacio entre el input y el select */
+  flex-grow: 1; /* Para que el grupo de búsqueda ocupe todo el espacio disponible */
+}
+
+.location-input, .search-input {
+  width: 100%; /* Ambos campos ocuparán el ancho completo dentro de su espacio */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.distance-select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pi-search {
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Línea 4: Listado de ciudades y Filtros */
+.navbar-filters {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.city-list-btn, .location-btn, .filters-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.city-list-btn i, .location-btn i, .filters-btn i {
+  margin-left: 5px;
+  color: #666;
+}
+
+.pi-chevron-down, .pi-chevron-up {
+  font-size: 1rem; /* Asegurar que los íconos tengan un tamaño adecuado */
+  margin-left: 5px;
+}
+
+.pi-location-arrow {
+  font-size: 1rem; /* Ajuste del tamaño del ícono de localizarme */
+}
+
+.pi-chevron-down:hover, .pi-chevron-up:hover, .pi-location-arrow:hover {
+  color: #ff5555; /* Cambiar color al pasar el mouse sobre los íconos */
+}
+
+/* Sección de Filtros */
+.filters-section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centramos el contenedor de los filtros */
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-between; /* Distribuir los filtros a los lados */
+  gap: 20px;
+  width: 80%; /* Para que el contenedor de filtros no ocupe todo el ancho */
+}
+
+/* Estilos para las columnas de filtros */
+.filters-left-column, .filters-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filter-group {
+  margin-bottom: 10px;
+}
+
+button.selected, select.selected {
+  background-color: #007bff; /* Azul para las opciones seleccionadas */
+  color: white; /* Texto en blanco */
+}
+
+/* Estilo para el botón cerrar */
+.close-container-btn {
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  font-size: 1.5rem; /* Tamaño del ícono */
+  position: absolute; /* Posición absoluta */
+  top: 10px; /* Alineado en la parte superior */
+  right: 10px; /* Alineado a la derecha */
+  cursor: pointer; /* Cambiar el cursor a pointer */
+}
+
+.close-container-btn i {
+  color: red;
+}
+
+/* Estilo para el botón de filtrar y borrar filtros */
+.filters-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Título de cada sección de filtros */
+.filter-title {
+  color: #ff5555; /* Color rojo para los títulos */
+  font-weight: bold;
+}
+
+/* Botones de filtros */
+button {
+  padding: 6px 12px;
+  background-color: #e8e8e8;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-btn {
+  background-color: #28a745; /* Verde para el botón de Filtrar */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-btn {
+  background-color: #dc3545; /* Rojo para el botón de Borrar filtros */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.menu-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.menu-toggle-btn i {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-toggle-btn:hover i {
+  transform: scale(1.1);
+}
+
+/*
+
+Estilos para la sección de filtros
+.filters-section {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+}
+
+.filters-category {
+  margin-bottom: 20px;
+}
+
+.filters-category h4 {
+  color: #e63946;
+}
+
+.filters-category label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.price-filters, .age-filters {
+  display: flex;
+  gap: 10px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filter-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+} */

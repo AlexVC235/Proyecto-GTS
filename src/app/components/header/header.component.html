@@ -1,0 +1,236 @@
+<nav class="navbar">
+  <!-- Línea 1: Logo + Publicar anuncio, 0, Corazón y Menú -->
+  <div class="navbar-top">
+    <div class="navbar-brand">
+      <a href="/"
+        ><img id="logo" src="assets/logo.png" alt="Photokines logo"
+      /></a>
+    </div>
+    <div class="navbar-options">
+      <button class="publish-ad-btn" (click)="navigateToPublishAd()">Publicar anuncio</button>
+      <div class="favorites">
+        <span>0</span>
+        <i class="pi pi-heart-fill" (click)="goToFavorites()"></i>
+      </div>
+      <button class="menu-toggle-btn" (click)="navigateAndHideHeader('/menu')">
+        <i [ngClass]="isMenuOpen ? 'pi pi-times' : 'pi pi-bars'" [style.color]="isMenuOpen ? 'darkblue' : ''"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Línea 2: Categoría y Sexo -->
+  <div class="navbar-middle">
+    <div class="navbar-categories">
+      <span>Categoría:</span>
+      <button class="category-btn">Kinesiologas</button>
+      <button class="category-btn">Masajes</button>
+      <button class="category-btn">Videollamadas</button>
+    </div>
+    <div class="navbar-gender">
+      <span>Sexo:</span>
+      <button class="gender-btn selected">Mujeres</button>
+      <button class="gender-btn">Travestis</button>
+      <button class="gender-btn">Transexuales</button>
+      <button class="gender-btn">Hombres</button>
+    </div>
+  </div>
+
+  <!-- Línea 3: Búsqueda -->
+  <div class="navbar-search">
+    <div class="search-group">
+      <input type="text" placeholder="¿Dónde estás?" class="location-input" />
+      <select class="distance-select">
+        <option>+ 0 km</option>
+        <option>+ 1 km</option>
+        <option>+ 3 km</option>
+        <option>+ 5 km</option>
+        <option>+ 10 km</option>
+        <option>+ 25 km</option>
+        <option>+ 50 km</option>
+      </select>
+    </div>
+    <input type="text" placeholder="¿Qué buscas?" class="search-input" />
+    <button class="pi pi-search">Buscar</button>
+  </div>
+
+  <!-- Línea 4: Listado de ciudades y Filtros -->
+  <div class="navbar-filters">
+    <button class="city-list-btn" (click)="toggleCityList()">
+      Listado de ciudades
+      <i
+        class="pi"
+        [ngClass]="{
+          'pi-chevron-down': !cityListOpen,
+          'pi-chevron-up': cityListOpen
+        }"
+      ></i>
+    </button>
+    <button class="location-btn">
+      Localizarme <i class="pi pi-map-marker"></i>
+    </button>
+    <button class="filters-btn" (click)="toggleFilters()">
+      Filtros de búsqueda
+      <i
+        class="pi"
+        [ngClass]="{
+          'pi-chevron-down': !filtersOpen,
+          'pi-chevron-up': filtersOpen
+        }"
+      ></i>
+    </button>
+  </div>
+
+  <!-- Sección de Filtros -->
+  <div class="filters-section" *ngIf="filtersOpen">
+    <div class="filters-container">
+      <div class="filters-left-column">
+        <h3 class="filter-title">Principales</h3>
+        <div class="filter-group">
+          <label>Precio S/.</label>
+          <select (change)="onPriceSelect()" [class.selected]="priceSelected">
+            <option *ngFor="let price of priceOptions">{{ price }}</option>
+          </select>
+          <select (change)="onPriceSelect()" [class.selected]="priceSelected">
+            <option *ngFor="let price of priceOptions">{{ price }}</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Edad</label>
+          <select (change)="onAgeSelect()" [class.selected]="ageSelected">
+            <option *ngFor="let age of ageOptions">{{ age }}</option>
+          </select>
+          <select (change)="onAgeSelect()" [class.selected]="ageSelected">
+            <option *ngFor="let age of ageOptions">{{ age }}</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Atención a</label>
+          <button>Hombres</button>
+          <button>Mujeres</button>
+          <button>Parejas</button>
+          <button>Discapacitados</button>
+        </div>
+        <div class="filter-group">
+          <label>Contacto</label>
+          <button>Llamada</button>
+          <button>WhatsApp</button>
+          <button>Telegram</button>
+        </div>
+      </div>
+
+      <div class="filters-left-column">
+        <h3 class="filter-title">Servicios generales</h3>
+        <button>Actriz porno</button>
+        <button>Besos boca</button>
+        <button>Eyaculación cuerpo</button>
+        <button>Eyaculación Facial</button>
+        <button>Fantasías y disfraces</button>
+        <button>Masajes ocultos</button>
+        <button>Oral con condón</button>
+        <button>Oral hasta el final</button>
+        <button>Oral natural</button>
+        <button>Sexo Anal</button>
+        <button>Trato de novia</button>
+      </div>
+
+      <div class="filters-left-column">
+        <h3 class="filter-title">Servicios especiales</h3>
+        <button>Beso blanco</button>
+        <button>Beso negro</button>
+        <button>Fetichismo</button>
+        <button>Garganta Profunda</button>
+        <button>Lluvia dorada</button>
+        <button>Sado duro</button>
+        <button>Sado suave</button>
+        <button>Squirting</button>
+        <button>Strap on</button>
+      </div>
+
+      <div class="filters-right-column">
+        <h3 class="filter-title">Contenido</h3>
+        <button (click)="selectOption('contenido', 'fotos')" [class.selected]="isSelected('contenido', 'fotos')">Fotos verificadas</button>
+        <button (click)="selectOption('contenido', 'cara')" [class.selected]="isSelected('contenido', 'cara')">Cara visible</button>
+        <button>Con videos</button>
+        <button>Con audio</button>
+        <button>Con ratings</button>
+      </div>
+
+      <div class="filters-right-column">
+        <h3 class="filter-title">Apariencia</h3>
+        <div class="filter-group">
+          <label>País</label>
+          <select>
+            <option *ngFor="let country of countryOptions">
+              {{ country }}
+            </option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Etnia</label>
+          <button>Asiáticas</button>
+          <button>Blancas</button>
+          <button>Indígenas</button>
+          <button>Mestizas</button>
+          <button>Negras</button>
+          <button>Trigueñas</button>
+        </div>
+
+        <div class="filter-group">
+          <label>Cabello</label>
+          <button>Castaño</button>
+          <button>Negro</button>
+          <button>Pelirrojas</button>
+          <button>Rubias</button>
+        </div>
+
+        <div class="filter-group">
+          <label>Estatura</label>
+          <button>Altas</button>
+          <button>Bajas</button>
+        </div>
+
+        <div class="filter-group">
+          <label>Cuerpo</label>
+          <button>Delgadas</button>
+          <button>Gordas</button>
+        </div>
+
+        <div class="filter-group">
+          <label>Pecho</label>
+          <button>Naturales</button>
+          <button>Tetonas</button>
+        </div>
+
+        <div class="filter-group">
+          <label>Pubis</label>
+          <button>Depiladas</button>
+          <button>Sin depilar</button>
+        </div>
+      </div>
+
+      <div class="filters-right-column">
+        <h3 class="filter-title">Lugar</h3>
+        <button>A domicilio</button>
+        <button>Cena romántica</button>
+        <button>Club intercambio</button>
+        <button>Con departamento</button>
+        <button>Despedida de soltero</button>
+        <button>Eventos y fiestas</button>
+        <button>Hotel / Motel</button>
+        <button>Viajes</button>
+      </div>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="filters-actions">
+      <button class="filter-btn" (click)="applyFilters()">Filtrar</button>
+      <button class="reset-btn" (click)="resetFilters()">Borrar filtros</button>
+    </div>
+
+    <div class="close-container-btn" (click)="closeFilterSection()">
+      <i class="pi pi-times-circle"></i>
+    </div>
+
+  </div>
+</nav>

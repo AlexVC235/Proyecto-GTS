@@ -1,0 +1,268 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  background-color: #F4F4F4;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #303030;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #D0D0D0;
+  border-radius: 3px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #D0D0D0;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #303030;
+}
+
+.contact-form .captcha-error {
+  color: #CA1E25;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.contact-form .submit-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: #CA1E25;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contactar_info {
+  width: 100%;
+  vertical-align: top;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+
+.contactar_info_label, .contactar_info_val {
+  display: inline-block;
+}
+
+.contactar_info_group {
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+  min-width: 180px;
+}
+
+.contactar_info_item {
+  display: block;
+  width: 100%;
+  min-width: 180px;
+  margin-bottom: 5px;
+}
+
+.contactar_info_label {
+  font-weight: 700;
+  vertical-align: top;
+  min-width: 90px;
+}
+
+/* Cabecera */
+#header {
+  z-index: 1000;
+}
+
+#cabecera {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #E8E8E8;
+  text-align: center;
+  z-index: 1000;
+}
+
+#cabecera .cabecera_sup {
+  position: relative;
+  height: 50px;
+}
+
+#div_logo {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  z-index: 1;
+}
+
+#logo {
+  border: 0;
+  height: 36px;
+}
+
+#menu_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+}
+
+#menu_button:hover {
+  color: #CA1E25;
+}
+
+/* Formulario de contacto */
+#contactar_form {
+  margin-top: 40px;
+}
+
+#contactar_form label {
+  display: inline-block;
+  width: 135px;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 15px;
+}
+
+#contactar_form > div:not(.div_submit) {
+  margin-bottom: 25px;
+}
+
+#contactar_form input,
+#contactar_form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  border: 1px solid #D0D0D0;
+  border-radius: 3px;
+}
+
+#contactar_form textarea {
+  height: 190px;
+}
+
+#contactar_form .div_submit {
+  text-align: center;
+}
+
+#contactar_form .input_submit {
+  font-size: 18px;
+  color: #fff;
+  background-color: #CA1E25;
+  border: 0;
+  padding: 5px 10px;
+  height: 40px;
+  width: 200px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.label_mensaje {
+  vertical-align: top;
+}
+
+.g-recaptcha {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Bloques */
+.bloque {
+  color: #303030;
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 20px;
+  position: relative;
+  font-size: 15px;
+  border: 1px solid #D0D0D0;
+  border-radius: 0;
+}
+
+.about_container_centrado {
+  text-align: center;
+}
+
+.about_container_centrado .bloque {
+  float: none !important;
+  text-align: left;
+}
+
+#about_content {
+  width: 100%;
+  max-width: 645px;
+  width: calc(100% - 295px);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+#about_content h1, #about_content h2 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 25px;
+  margin-top: 35px;
+}
+
+#about_content h1:first-of-type, #about_content h2:first-of-type {
+  margin-top: 0;
+}
+
+#about_content p {
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+/* Información básica sobre protección de datos */
+.clausula_informacion_formulario td {
+  vertical-align: top;
+}
+
+img.texto_emp_mobile {
+  display: none;
+  padding-top: 1px;
+  max-width: 100%;
+}
+
+img.texto_emp_desktop {
+  padding-top: 3px;
+  display: inline-block;
+}
+
+/* Media queries */
+@media screen and (max-width: 1664px) {
+  #cabecera .navegacion_about .navegacion_titulo {
+    margin-right: 1px;
+  }
+}

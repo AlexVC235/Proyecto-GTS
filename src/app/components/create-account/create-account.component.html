@@ -1,0 +1,12 @@
+<div class="create-account-container">
+  <h1>Crear una nueva cuenta</h1>
+  <p>Indícanos un email y te enviaremos un enlace para validarlo. Este email no será público, solo se usará para gestionar tus anuncios.</p>
+  <input type="email" placeholder="Email" [(ngModel)]="email" name="email" />
+  <div class="captcha-container">
+    <input type="checkbox" />
+    <label>Acepto la <a href="/politicas-de-privacidad">Política de privacidad</a></label>
+  </div>
+  <button class="action-btn" (click)="sendValidationEmail()">Enviar email</button>
+  <button class="google-btn" (click)="openGoogleSignIn()">Crea tu cuenta más fácilmente con Google</button>
+</div>
+

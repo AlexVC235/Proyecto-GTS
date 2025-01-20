@@ -1,0 +1,43 @@
+<header id="header">
+  <nav id="cabecera">
+    <div id="cabecera_sup_gen" class="cabecera_sup">
+      <div id="div_logo">
+        <a href="/" id="link_home">
+          <img id="logo" src="assets/logo.png" alt="Photokines" />
+        </a>
+      </div>
+      <button
+        id="menu_button"
+        class="pi pi-bars"
+        (click)="navigateToHome()"
+        aria-label="Ir a Home"
+      ></button>
+    </div>
+  </nav>
+</header>
+
+<main id="content">
+  <div class="bloque bloque_login">
+    <span class="titulo">Publicar anuncio</span>
+    <div id="botones_panel">
+      <p class="explicacion">
+        Para publicar tu anuncio es necesario que primero te crees una cuenta.
+      </p>
+      <div
+        class="boton_grande boton_panel_login"
+        data-src="/control"
+        id="btn_login"
+      >
+        <span>Ya tengo una cuenta</span>
+      </div>
+      <br />
+      <div
+        class="boton_grande boton_panel_login"
+        data-src="/nueva-cuenta"
+        id="btn_signup"
+      >
+        <span>Crear una nueva cuenta</span>
+      </div>
+    </div>
+  </div>
+</main>

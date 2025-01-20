@@ -1,0 +1,142 @@
+<header id="header">
+  <nav id="cabecera">
+    <div id="cabecera_sup_gen" class="cabecera_sup">
+      <div id="div_logo">
+        <a href="/" id="link_home">
+          <img id="logo" src="assets/logo.png" alt="Photokines" />
+        </a>
+      </div>
+      <button
+        id="menu_button"
+        class="pi pi-bars"
+        (click)="navigateToMenu()"
+        aria-label="Ir al menú"
+      ></button>
+    </div>
+  </nav>
+</header>
+
+<main id="content">
+  <div class="bloque bloque_login">
+    <h1 class="titulo">Panel de control</h1>
+    <div class="login_container">
+      <form action="/control/login-ok" method="post" id="form_login">
+        <input type="hidden" id="tipo_login" value="acceder" /><input
+          type="hidden"
+          name="origen"
+          value="anuncio_publicar"
+        /><input
+          type="hidden"
+          name="etag"
+          value="bXno2yJZXQlWXajiF2eOefDyNhDbqdO2Q5j54r79"
+        /><input type="hidden" id="codigo_anuncio" value="" /><span
+          class="info"
+        ></span
+        ><span class="info_ok"></span
+        ><span class="field"
+          ><input
+            type="text"
+            name="email"
+            id="login_email"
+            value=""
+            placeholder="Email"
+            maxlength="50"
+            inputmode="email" /><span class="error" id="error_email"
+            ><i class="notranslate m-ico"></i><span></span></span></span
+        ><span class="field"
+          ><input
+            type="password"
+            name="password"
+            id="login_password"
+            value=""
+            placeholder="Contraseña"
+            maxlength="50" /><span class="error" id="error_password"
+            ><i class="notranslate m-ico"></i><span></span
+          ></span>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LfgaPsSAAAAADvKV1Cx175vvCMIy94hhdSnHYS0"
+          >
+            <div style="width: 304px; height: 78px">
+              <div>
+                <iframe
+                  title="reCAPTCHA"
+                  width="304"
+                  height="78"
+                  role="presentation"
+                  name="a-oiix0hzdgti8"
+                  frameborder="0"
+                  scrolling="no"
+                  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                  src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LfgaPsSAAAAADvKV1Cx175vvCMIy94hhdSnHYS0&amp;co=aHR0cHM6Ly93d3cucGhvdG9raW5lc2lvbG9nYXMuY29tOjQ0Mw..&amp;hl=es&amp;v=1Bq_oiMBd4XPUhKDwr0YL1Js&amp;size=normal&amp;cb=5hr6vzburd69"
+                ></iframe>
+              </div>
+              <textarea
+                id="g-recaptcha-response"
+                name="g-recaptcha-response"
+                class="g-recaptcha-response"
+                style="
+                  width: 250px;
+                  height: 40px;
+                  border: 1px solid rgb(193, 193, 193);
+                  margin: 10px 25px;
+                  padding: 0px;
+                  resize: none;
+                  display: none;
+                "
+              ></textarea>
+            </div>
+            <iframe style="display: none"></iframe>
+          </div>
+          <span class="error" id="error_recaptcha_response_field"
+            ><i class="material-icons"></i><span></span
+          ></span>
+          <script
+            type="text/javascript"
+            src="//www.google.com/recaptcha/api.js?hl=es"
+            async=""
+            defer=""
+          ></script>
+          <label class="mantener_sesion"
+            ><input type="checkbox" name="mantener" /> Recuérdame</label
+          ><span class="recordar_password"
+            ><a href="/control/restablecer-password"
+              >¿Has olvidado tu contraseña?</a
+            ></span
+          >
+          <div class="clear_both"></div></span
+        ><input
+          id="login_acceder"
+          type="submit"
+          class="submit"
+          value="Acceder a mi panel"
+        /><input id="email_no_valido" type="hidden" value="" /><input
+          type="hidden"
+          id="hashusu"
+          name="hashusu"
+          value="81179ee203a2576be84142809365d00f"
+        />
+      </form>
+    </div>
+    <div class="separador">
+      <span id="separador" class="separadorText"
+        >Accede más fácilmente con:</span
+      >
+    </div>
+    <div id="botones_redes_sociales">
+      <div
+        class="boton boton_red_social"
+        id="boton_google"
+        data-url="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=300648116679-lj6djje0aegf3eeveblejh9vuhme3tb1.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fwww.photokinesiologas.com%2Flogin-google&amp;state&amp;scope=email%20profile&amp;approval_prompt=auto"
+      >
+        <div id="logo_login_google">
+          <img
+            id="icon_g"
+            src="https://cdn.photokinesiologas.com/sl/gfx/4008/logo_google_w.svg"
+          />
+        </div>
+        <span>Google</span>
+      </div>
+    </div>
+  </div>
+</main>

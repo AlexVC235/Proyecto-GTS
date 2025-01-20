@@ -1,0 +1,36 @@
+.favorites-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.no-favorites {
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: inline-block;
+  width: 50%;
+}
+
+.no-favorites i {
+  color: #ff5555;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.no-favorites p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.2rem;
+}
+
+.remove-all-btn {
+  background-color: #ff5555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}

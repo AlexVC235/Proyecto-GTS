@@ -1,0 +1,210 @@
+<head>
+  <title>Contactar | Photokines</title>
+  <meta name="format-detection" content="telephone=no" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0"
+  />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="all" />
+  <meta name="title" content="Contactar | Photokines" />
+  <meta name="RATING" content="RTA-5042-1996-1400-1577-RTA" />
+  <meta name="geo.country" content="PE" />
+  <link rel="canonical" href="https://www.photokinesiologas.com/contactar" />
+  <link
+    rel="alternate"
+    hreflang="es"
+    href="https://www.photokinesiologas.com/contactar"
+  />
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://www.photokinesiologas.com/contactar"
+  />
+  <link rel="shortcut icon" href="assets/k.png" type="image/png" />
+  <link rel="icon" sizes="192x192" href="assets/k.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/k.png" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="assets/k.png" />
+</head>
+
+<body>
+  <header id="header">
+    <nav id="cabecera">
+      <div id="cabecera_sup_gen" class="cabecera_sup">
+        <div id="div_logo">
+          <a href="/" id="link_home">
+            <img id="logo" src="assets/logo.png" alt="Photokines" />
+          </a>
+        </div>
+        <button
+          id="menu_button"
+          class="pi pi-bars"
+          (click)="navigateToMenu()"
+          aria-label="Abrir menú"
+        ></button>
+      </div>
+    </nav>
+  </header>
+  <main id="content">
+    <div id="about_container" class="about_container_centrado">
+      <div id="about_content" class="bloque bloque_centrado">
+        <h1 class="titulo">Contactar</h1>
+        <ul class="lista_contactar">
+          <li>
+            Déjanos tus datos de contacto y en breve responderemos tu consulta.
+          </li>
+          <li>
+            Si necesitas adjuntar algún archivo, no uses este formulario para
+            contactar con nosotros. En su lugar, haznos tu consulta enviándonos
+            directamente un email a
+            <a
+              href="mailto:info@photokinesiologas.com"
+              class="bold_underline notranslate"
+              >infophotokinesiologas.com</a
+            >
+            y adjunta los archivos.
+          </li>
+        </ul>
+        <form id="contactar_form" action="/contactar-ok" method="post">
+          <input
+            type="hidden"
+            name="referer"
+            value="https://www.photokinesiologas.com/"
+          />
+          <input type="hidden" name="alias" value="" />
+          <div>
+            <label for="nombre">Nombre</label>
+            <input
+              class="input_text"
+              type="text"
+              name="nombre"
+              id="nombre"
+              value=""
+            />
+            <span class="error" id="error_nombre">
+              <i class="notranslate m-ico">&#xE000;</i>
+              <span></span>
+            </span>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              class="input_text"
+              type="text"
+              name="email"
+              id="email"
+              value=""
+            />
+            <span class="error" id="error_email">
+              <i class="notranslate m-ico">&#xE000;</i>
+              <span></span>
+            </span>
+          </div>
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input
+              class="input_text"
+              type="text"
+              name="telefono"
+              id="telefono"
+              value=""
+            />
+            <span class="error" id="error_telefono">
+              <i class="notranslate m-ico">&#xE000;</i>
+              <span></span>
+            </span>
+          </div>
+          <div>
+            <label for="asunto">Asunto</label>
+            <input
+              class="input_text"
+              type="text"
+              name="asunto"
+              id="asunto"
+              value=""
+            />
+            <span class="error" id="error_asunto">
+              <i class="notranslate m-ico">&#xE000;</i>
+              <span></span>
+            </span>
+          </div>
+          <div>
+            <label for="mensaje" class="label_mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+            <span class="error" id="error_mensaje">
+              <i class="notranslate m-ico">&#xE000;</i>
+              <span></span>
+            </span>
+          </div>
+          <h4>INFORMACIÓN BÁSICA SOBRE PROTECCIÓN DE DATOS</h4>
+          <table class="clausula_informacion_formulario">
+            <tr>
+              <td>Responsable</td>
+              <td>
+                <img
+                  class="texto_emp_mobile"
+                  src="assets/empresa_mobile.png"
+                  width="138px"
+                />
+                <img
+                  class="texto_emp_desktop"
+                  src="assets/empresa.png"
+                  width="275px"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Finalidades</td>
+              <td class="sn_td_form_proteccion">
+                Ponernos en contacto contigo para resolver tus dudas y
+                facilitarte la información solicitada por medios electrónicos.
+              </td>
+            </tr>
+            <tr>
+              <td>Derechos</td>
+              <td class="sn_td_form_proteccion">
+                Puedes acceder, rectificar y suprimir tus datos personales, así
+                como ejercer otros derechos, siguiendo las instrucciones de
+                nuestra
+                <a
+                  href="/textos-legales#politicaPrivacidad"
+                  target="_blank"
+                  class="bold_underline"
+                  >Política de privacidad</a
+                >
+                .
+              </td>
+            </tr>
+          </table>
+          <div class="bloque bloque_condiciones">
+            <re-captcha
+              (resolved)="onCaptchaResolved($event)"
+              siteKey="6LfgaPsSAAAAADvKV1Cx175vvCMIy94hhdSnHYS0"
+            ></re-captcha>
+            <span *ngIf="captchaError" class="error">
+              <i class="material-icons">&#xE000;</i>
+              <span>{{ captchaError }}</span>
+            </span>
+            <div id="condiciones_content">
+              Al pulsar <strong>Enviar</strong> entiendo y acepto los
+              <a
+                href="/textos-legales"
+                target="_blank"
+                class="bold bold_underline"
+              >
+                Textos legales
+              </a>
+              .
+            </div>
+          </div>
+
+          <div id="form_info"></div>
+          <div class="div_submit">
+            <input class="input_submit" type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
