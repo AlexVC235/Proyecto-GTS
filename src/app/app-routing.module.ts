@@ -9,6 +9,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ContactarComponent } from './components/contactar/contactar.component';
 import { TextosLegalesComponent } from './components/textos-legales/textos-legales.component';
 import { ControlComponent } from './components/control/control.component';
+import { PreciosComponent } from './components/precios/precios.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'contactar', component: ContactarComponent },
   { path: 'textos-legales', component: TextosLegalesComponent },
   { path: 'control', component: ControlComponent },
+  { path: 'precios', component: PreciosComponent },
 ];
 
 @NgModule({

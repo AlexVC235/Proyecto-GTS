@@ -28,4 +28,8 @@ export class MenuComponent {
   navigateToControl() {
     this.router.navigate(['/control']);
   }
+
+  navigateToPrecios() {
+    this.router.navigate(['/precios']);
+  }
 }
