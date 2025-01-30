@@ -1,29 +1,15 @@
 <head>
   <title>Textos Legales | Photokines</title>
   <meta name="format-detection" content="telephone=no" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=2.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="robots" content="all" />
   <meta name="title" content="Textos Legales | Photokines" />
   <meta name="RATING" content="RTA-5042-1996-1400-1577-RTA" />
   <meta name="geo.country" content="PE" />
-  <link
-    rel="canonical"
-    href="https://www.photokinesiologas.com/textos-legales"
-  />
-  <link
-    rel="alternate"
-    hreflang="es"
-    href="https://www.photokinesiologas.com/textos-legales"
-  />
-  <link
-    rel="alternate"
-    hreflang="x-default"
-    href="https://www.photokinesiologas.com/textos-legales"
-  />
+  <link rel="canonical" href="https://www.photokinesiologas.com/textos-legales"/>
+  <link rel="alternate" hreflang="es" href="https://www.photokinesiologas.com/textos-legales"/>
+  <link rel="alternate" hreflang="x-default" href="https://www.photokinesiologas.com/textos-legales"/>
   <link rel="shortcut icon" href="assets/k.png" type="image/png" />
   <link rel="icon" sizes="192x192" href="assets/k.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/k.png" />
@@ -40,138 +26,62 @@
             <img id="logo" src="assets/logo.png" alt="Photokines" />
           </a>
         </div>
-        <button
-          id="menu_button"
-          class="pi pi-bars"
-          (click)="navigateToMenu()"
-          aria-label="Abrir Textos Legales"
-        ></button>
+        <button id="menu_button" class="pi pi-bars" (click)="navigateToMenu()" aria-label="Abrir Textos Legales"></button>
       </div>
     </nav>
   </header>
-  <!-- # CABECERA_ABOUT # -->
-  <!-- </div>
-      <div id="cabecera_sub_buscar" class="cabecera_sub">
-        <div class="navegacion navegacion_about">
-          <div class="navegacion_titulo notranslate m-ico">menu</div>
-          <div class="navegacion_menu">
-            <div class="bloque bloque_dashboard">
-              <span class="titulo">Menú</span>
-              <div class="contenedor">
-                <div class="grupo">
-                  <span
-                    class="boton_dashboard anuncio_precios item enlace"
-                    id="about-precios"
-                    ><img
-                      loading="lazy"
-                      src="assets/dollar.png"
-                      alt="Precios"
-                    /><span>Precios</span></span
-                  ><span
-                    class="boton_dashboard anuncio_publicar item enlace"
-                    id="about-publicar"
-                    ><img
-                      loading="lazy"
-                      src="assets/holy_card.png"
-                      alt="Publicar anuncio"
-                    /><span>Publicar anuncio</span></span
-                  ><span
-                    class="boton_dashboard panel_de_control item enlace"
-                    id="about-control"
-                    ><img
-                      loading="lazy"
-                      src="assets/key.png"
-                      alt="Panel de control"
-                    /><span>Panel de control</span></span
-                  >
-                </div>
-                <div class="grupo">
-                  <span
-                    class="boton_dashboard contactar item enlace"
-                    id="about-contactar"
-                    ><img
-                      loading="lazy"
-                      src="assets/contact.png"
-                      alt="Contactar"
-                    /><span>Contactar</span></span
-                  ><span
-                    class="boton_dashboard textos_legales item enlace"
-                    id="about-textos-legales"
-                    ><img
-                      loading="lazy"
-                      src="assets/hammer.png"
-                      alt="Textos Legales"
-                    /><span>Textos Legales</span></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header> -->
+
   <main id="content">
     <div id="about_container" class="about_container_centrado">
       <div id="about_content" class="bloque bloque_centrado">
         <h1>Textos Legales</h1>
         <div class="olSuperior">
           <p>
-            <a class="anchor" href="#terminosCondiciones"
-              >1. Términos y condiciones</a
-            >
+            <a class="anchor" (click)="scrollToSection('terminosCondiciones', true)">1. Términos y condiciones</a>
+            <!-- <button (click)="navigateTo('prev')">← Anterior</button>
+            <button (click)="navigateTo('next')">Siguiente →</button> -->
           </p>
           <p>
-            <a class="anchor" href="#politicaPrivacidad"
-              >2. Política de privacidad</a
-            >
+            <a class="anchor" (click)="scrollToSection('politicaPrivacidad', true)">2. Política de privacidad</a>
+            <!-- <button (click)="navigateTo('prev')">← Anterior</button>
+            <button (click)="navigateTo('next')">Siguiente →</button> -->
           </p>
           <p>
-            <a class="anchor" href="#proteccionDatos"
-              >3. Información sobre protección de datos</a
-            >
+            <a class="anchor" (click)="scrollToSection('proteccionDatos', true)">3. Información sobre protección de datos</a>
+            <!-- <button (click)="navigateTo('prev')">← Anterior</button>
+            <button (click)="navigateTo('next')">Siguiente →</button> -->
           </p>
-          <p><a class="anchor" href="#cookies">4. Política de cookies</a></p>
+          <p>
+            <a class="anchor" (click)="scrollToSection('cookies', true)">4. Política de cookies</a>
+            <!-- <button (click)="navigateTo('prev')">← Anterior</button>
+            <button (click)="navigateTo('next')">Siguiente →</button> -->
+          </p>
         </div>
         <div class="nivel_1">
-          <a
-            class="anchor"
-            id="terminosCondiciones"
-            name="terminosCondiciones"
-          ></a>
+          <a class="anchor" id="terminosCondiciones" name="terminosCondiciones"></a>
           <p class="apartado_n1_">1. Términos y condiciones</p>
 
           <p class="apartado_n2_">1.1. Titularidad del sitio web</p>
           <p>
-            El presente aviso e información legal (en adelante, el "Aviso
-            Legal") regula el uso del servicio del portal de Internet
-            www.photokinesiologas.com (en adelante, PHOTOKINES) que TRUVALIA
-            GLOBAL CLASSIFIEDS OOD (en adelante, TGC) pone a disposición de los
+            El presente aviso e información legal (en adelante, el "Aviso Legal") regula el uso del servicio del portal de Internet
+            www.photokinesiologas.com (en adelante, PHOTOKINES) que TRUVALIA GLOBAL CLASSIFIEDS OOD (en adelante, TGC) pone a disposición de los
             usuarios de Internet.
           </p>
           <p>
-            PHOTOKINES es gestionado y explotado comercialmente por la sociedad
-            TGC con Unified Identification Code (UIC) 205567049 y dirección en
-            Boulevard Shipchenski Prohod, Number 18, Floor 3, Office 301,
-            Slatina, Sofia 1113, Bulgaria.
+            PHOTOKINES es gestionado y explotado comercialmente por la sociedad TGC con Unified Identification Code (UIC) 205567049 y dirección en
+            Boulevard Shipchenski Prohod, Number 18, Floor 3, Office 301, Slatina, Sofia 1113, Bulgaria.
           </p>
 
           <p>
-            Para cualquier comunicación efectiva con la Compañía pueden
-            dirigirse a la dirección de correo electrónico
-            info&#64;photokinesiologas.com.
+            Para cualquier comunicación efectiva con la Compañía pueden dirigirse a la dirección de correo electrónico info&#64;photokinesiologas.com.
           </p>
 
           <p class="apartado_n2_">1.2. Aceptación de las condiciones de uso</p>
           <p>
-            La utilización del Portal atribuye la condición de usuario del
-            Portal (en adelante, el "Usuario") e implica la aceptación plena y
-            sin reservas de todas y cada una de las disposiciones incluidas en
-            este Aviso Legal en la versión publicada por TGC en el momento mismo
-            en que el Usuario acceda al Portal. En consecuencia, el Usuario debe
-            leer atentamente el presente Aviso Legal en cada una de las
-            ocasiones en que se proponga utilizar el Portal, ya que aquél puede
-            sufrir modificaciones.
+            La utilización del Portal atribuye la condición de usuario del Portal (en adelante, el "Usuario") e implica la aceptación plena y
+            sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal en la versión publicada por TGC en el momento mismo
+            en que el Usuario acceda al Portal. En consecuencia, el Usuario debe leer atentamente el presente Aviso Legal en cada una de las
+            ocasiones en que se proponga utilizar el Portal, ya que aquél puede sufrir modificaciones.
           </p>
           <p>
             TGC se reserva el derecho de modificar las condiciones de uso de
@@ -2168,62 +2078,31 @@
             Bloquear todas las cookies).
           </p>
           <p>
-            <b
-              ><i><u>Safari:</u></i></b
-            >
+            <b><i><u>Safari:</u></i></b>
             Edición → Preferencias → Privacidad → Bloquear cookies (seleccionar
             “siempre”).
           </p>
           <p>O bien a través de los siguientes enlaces:</p>
           <ul>
             <li>
-              <a
-                href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies"
-                target="_blank"
-                >Configuración de cookies en Internet Explorer</a
-              >
+              <a href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank">Configuración de cookies en Internet Explorer</a>
             </li>
             <li>
-              <a
-                href="https://support.google.com/chrome/answer/95647?hl=es"
-                target="_blank"
-                >Configuración de cookies en Chrome</a
-              >
+              <a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank">Configuración de cookies en Chrome</a>
             </li>
             <li>
-              <a
-                href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectlocale=es&amp;redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we"
-                target="_blank"
-                >Configuración de cookies en Firefox</a
-              >
+              <a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectlocale=es&amp;redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we"target="_blank">Configuración de cookies en Firefox</a>
             </li>
             <li>
-              <a
-                href="https://support.apple.com/es-es/guide/safari/sfri11471/mac"
-                target="_blank"
-                >Configuración de cookies en Safari en Mac</a
-              >
+              <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank">Configuración de cookies en Safari en Mac</a>
             </li>
             <li>
-              <a href="https://support.apple.com/es-es/HT201265" target="_blank"
-                >Configuración de cookies en Safari en iPhone y iPad</a
-              >
+              <a href="https://support.apple.com/es-es/HT201265" target="_blank">Configuración de cookies en Safari en iPhone y iPad</a>
             </li>
           </ul>
-          <p>
-            Así mismo, la mayoría de navegadores permiten activar un modo
-            privado mediante el cual las cookies se borran siempre después de la
-            visita.
-          </p>
-          <p>
-            Finalmente, TGC se reserva el derecho a modificar en cualquier
-            momento la Política de cookies. Por ello, los Usuarios deberán
-            consultar periódicamente la Política de cookies.
-          </p>
-          <p>
-            Si tienes dudas sobre nuestra política de cookies puedes ponerte en
-            contacto con nosotros a través de los canales habituales.
-          </p>
+          <p>Así mismo, la mayoría de navegadores permiten activar un modo privado mediante el cual las cookies se borran siempre después de la visita.</p>
+          <p>Finalmente, TGC se reserva el derecho a modificar en cualquier momento la Política de cookies. Por ello, los Usuarios deberán consultar periódicamente la Política de cookies.</p>
+          <p>Si tienes dudas sobre nuestra política de cookies puedes ponerte en contacto con nosotros a través de los canales habituales.</p>
         </div>
       </div>
     </div>

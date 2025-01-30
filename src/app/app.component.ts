@@ -20,6 +20,10 @@ export class AppComponent implements OnInit {
         // Controla si se debe mostrar la cabecera según la ruta
         const hiddenRoutes = ['/contactar',
                               '/textos-legales',
+                              '/textos-legales#terminosCondiciones',
+                              '/textos-legales#politicaPrivacidad',
+                              '/textos-legales#proteccionDatos',
+                              '/textos-legales#cookies',
                               '/publicar',
                               '/control',
                               '/precios',

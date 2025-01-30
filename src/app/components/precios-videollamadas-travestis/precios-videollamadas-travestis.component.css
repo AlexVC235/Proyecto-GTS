@@ -68,6 +68,10 @@ hr {
   margin-bottom: 10px; /* Ajusta según sea necesario */
 }
 
+.vertodo .producto {
+  display: block;
+}
+
 #content {
   position: relative;
   width: 94%;

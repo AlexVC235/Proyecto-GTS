@@ -8,7 +8,13 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class PreciosMasajesMujeresComponent {
 
+  mostrarPlanesAdicionales: boolean = false;
+
   constructor(private router: Router) {}
+
+  togglePlanesAdicionales() {
+    this.mostrarPlanesAdicionales = !this.mostrarPlanesAdicionales;
+  }
 
   navigateToMenu() {
     this.router.navigate(['/menu']);

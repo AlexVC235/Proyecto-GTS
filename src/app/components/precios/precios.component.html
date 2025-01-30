@@ -74,14 +74,14 @@
                 <input type="hidden" name="ID_PRODUCTO" value="c0d3763b3685f2b6b1e27dbde9343748"/>
                 <input type="hidden" name="PRECIO" value="" />
               </div>
-              <div class="vermas">
-                <span class="mas">mostrar todos los planes</span>
-                <span class="menos">mostrar menos planes</span>
+              <div class="vermas" [ngClass]="{'menos': mostrarPlanesAdicionales}">
+                <span class="mas" (click)="togglePlanesAdicionales()" *ngIf="!mostrarPlanesAdicionales">mostrar todos los planes</span>
+                <span class="menos" (click)="togglePlanesAdicionales()" *ngIf="mostrarPlanesAdicionales">mostrar menos planes</span>
               </div>
             </div>
-            <div>
+            <div [ngClass]="{'vertodo': mostrarPlanesAdicionales}">
               <div class="separador_subidas_diarias">6 subidas</div>
-              <div class="producto" id="SU1X6">
+              <div class="producto" *ngIf="mostrarPlanesAdicionales" id="SU1X6">
                 <span class="dias"><b>1</b> día<br /><b>6</b> subidas</span>
                 <span class="precio_tachado"></span>
                 <span class="precio">S/. 18</span>
@@ -90,7 +90,7 @@
                 <input type="hidden" name="ID_PRODUCTO" value="6f3ff7dac3a6aded9fb375f5c00bfd31"/>
                 <input type="hidden" name="PRECIO" value="" />
               </div>
-              <div class="producto" id="SU3X6">
+              <div class="producto" *ngIf="mostrarPlanesAdicionales" id="SU3X6">
                 <span class="dias"><b>3</b> días<br /><b>6</b> subidas / día</span>
                 <span class="precio_tachado"></span>
                 <span class="precio">S/. 25</span>
@@ -99,7 +99,7 @@
                 <input type="hidden" name="ID_PRODUCTO" value="1f9f99da763d16926c87d8c43a11aa14"/>
                 <input type="hidden" name="PRECIO" value="" />
               </div>
-              <div class="producto" id="SU7X6">
+              <div class="producto" *ngIf="mostrarPlanesAdicionales" id="SU7X6">
                 <span class="dias"><b>7</b> días<br /><b>6</b> subidas / día</span>
                 <span class="precio_tachado"></span>
                 <span class="precio">S/. 40</span>
@@ -108,7 +108,7 @@
                 <input type="hidden" name="ID_PRODUCTO" value="062beaaf3e740c99bf4304ed1ccd89a5"/>
                 <input type="hidden" name="PRECIO" value="" />
               </div>
-              <div class="producto" id="SU15X6">
+              <div class="producto" *ngIf="mostrarPlanesAdicionales" id="SU15X6">
                 <span class="dias"><b>15</b> días<br /><b>6</b> subidas / día</span>
                 <span class="precio_tachado"></span>
                 <span class="precio">S/. 60</span>

@@ -8,7 +8,13 @@ import { Router } from '@angular/router';
 })
 export class PreciosTravestisComponent {
 
+  mostrarPlanesAdicionales: boolean = false;
+
   constructor(private router: Router) {}
+
+  togglePlanesAdicionales() {
+    this.mostrarPlanesAdicionales = !this.mostrarPlanesAdicionales;
+  }
 
   navigateToMenu() {
     this.router.navigate(['/menu']);

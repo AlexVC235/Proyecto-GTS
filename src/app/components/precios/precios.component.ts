@@ -8,11 +8,21 @@ import { Router } from '@angular/router';
 })
 export class PreciosComponent {
 
+  mostrarPlanesAdicionales: boolean = false;
+
   constructor(private router: Router) {}
+
+  togglePlanesAdicionales() {
+    this.mostrarPlanesAdicionales = !this.mostrarPlanesAdicionales;
+  }
 
   navigateToMenu() {
     this.router.navigate(['/menu']);
   }
+
+  // navigateToPrecios() {
+  //   this.router.navigate(['/precios']);
+  // }
 
   navigateToPublish() {
     this.router.navigate(['/publicar']);
