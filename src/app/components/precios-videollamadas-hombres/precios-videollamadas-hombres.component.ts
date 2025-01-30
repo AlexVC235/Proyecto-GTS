@@ -38,9 +38,9 @@ export class PreciosVideollamadasHombresComponent {
     this.router.navigate(['/precios-masajes-travestis']);
   }
 
-  // navigateToPreciosMasajesHombres() {
-  //   this.router.navigate(['/precios-masajes-hombres']);
-  // }
+  navigateToPreciosMasajesHombres() {
+    this.router.navigate(['/precios-masajes-hombres']);
+  }
 
   navigateToPreciosVideollamadasMujeres() {
     this.router.navigate(['/precios-videollamadas-mujeres']);
