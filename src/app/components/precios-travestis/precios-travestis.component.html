@@ -8,19 +8,18 @@
     </div>
   </nav>
 </header>
-
 <main id="content">
   <div class="bloque">
     <form id="form_precios" action="/precios" method="POST">
       <span class="titulo">Precios</span>
       <p class="paso"><img src="assets/reload.png"/><span>Subidas automáticas</span></p>
-      <p>Haz más visible tu anuncio, haciendo que <strong>periódicamente suba a la primera posición</strong> del listado.</p>
+      <p>Haz más visible tu anuncio, haciendo que<strong>periódicamente suba a la primera posición</strong> del listado.</p>
       <div class="filtros">
         <label class="sectores">
           <span class="label">Sector:</span>
           <span class="input" id="sectores">
-            <span data-id="kines" class="sector activo" data-geo="1">Kinesiólogas</span>
-            <span data-id="trans" class="sector" data-geo="1" (click)="navigateToPreciosTravestis()">Travestis</span>
+            <span data-id="kines" class="sector" data-geo="1" (click)="navigateToPrecios()">Kinesiólogas</span>
+            <span data-id="trans" class="sector activo" data-geo="1">Travestis</span>
             <span data-id="chicos" class="sector" data-geo="1" (click)="navigateToPreciosHombres()">Hombres</span>
             <span data-id="masajes-eroticos-mujeres" class="sector" data-geo="1" (click)="navigateToPreciosMasajesMujeres()">Masajes Mujeres</span>
             <span data-id="masajes-eroticos-travestis" class="sector" data-geo="1" (click)="navigateToPreciosMasajesTravestis()">Masajes Travestis</span>
@@ -44,6 +43,25 @@
       <div id="bloque_productos">
         <div id="productos" class="productos">
           <div class="destacados">
+            <div class="producto" id="featured_SU7x1">
+              <span class="dias"><b>7</b> días<br /><b>1</b> subida / día</span>
+              <span class="precio_tachado"></span>
+              <span class="precio">S/. 18</span>
+              <span class="precio_unitario">S/. 2,57 / día</span>
+              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
+              <input type="hidden" name="ID_PRODUCTO" value="mekkfu0t9pmp59ehen0rt003ajn6lgmp"/>
+              <input type="hidden" name="PRECIO" value="" />
+            </div>
+            <div class="producto producto_recomendado" id="featured_SU7X3">
+              <span class="recomendacion">Recomendado para tu ciudad</span>
+              <span class="dias"><b>7</b> días<br /><b>3</b> subidas / día</span>
+              <span class="precio_tachado"></span>
+              <span class="precio">S/. 25</span>
+              <span class="precio_unitario">S/. 3,57 / día</span>
+              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
+              <input type="hidden" name="ID_PRODUCTO" value="ca51efc62aeca9f3c2f9093f013148dd"/>
+              <input type="hidden" name="PRECIO" value="" />
+            </div>
             <div class="producto" id="featured_SU7X6">
               <span class="dias"><b>7</b> días<br /><b>6</b> subidas / día</span>
               <span class="precio_tachado"></span>
@@ -53,31 +71,78 @@
               <input type="hidden" name="ID_PRODUCTO" value="062beaaf3e740c99bf4304ed1ccd89a5"/>
               <input type="hidden" name="PRECIO" value="" />
             </div>
-            <div class="producto producto_recomendado" id="featured_SU7X12">
-              <span class="recomendacion">Recomendado para tu ciudad</span>
-              <span class="dias"><b>7</b> días<br /><b>12</b> subidas / día</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 60</span>
-              <span class="precio_unitario">S/. 8,57 / día</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="831e8dee866e1c20680a396fec22db1c"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
-            <div class="producto" id="featured_SU7X24">
-              <span class="dias"><b>7</b> días<br /><b>24</b> subidas / día</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 95</span>
-              <span class="precio_unitario">S/. 13,57 / día</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="c0d3763b3685f2b6b1e27dbde9343748"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
             <div class="vermas">
               <span class="mas">mostrar todos los planes</span>
               <span class="menos">mostrar menos planes</span>
             </div>
           </div>
           <div>
+            <div class="separador_subidas_diarias">1 subida</div>
+            <div class="producto_spacer"></div>
+            <div class="producto" id="SU3x1">
+              <span class="dias"><b>3</b> días<br /><b>1</b> subida / día</span>
+              <span class="precio_tachado"></span>
+              <span class="precio">S/. 12</span>
+              <span class="precio_unitario">S/. 4 / día</span>
+              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
+              <input type="hidden" name="ID_PRODUCTO" value="6mlr7zuxfwm0okifgulp6z6zo58ocgi7"/>
+              <input type="hidden" name="PRECIO" value="" />
+            </div>
+            <div class="producto" id="SU7x1">
+              <span class="dias"><b>7</b> días<br /><b>1</b> subida / día</span>
+              <span class="precio_tachado"></span>
+              <span class="precio">S/. 18</span>
+              <span class="precio_unitario">S/. 2,57 / día</span>
+              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
+              <input type="hidden" name="ID_PRODUCTO" value="mekkfu0t9pmp59ehen0rt003ajn6lgmp"/>
+              <input type="hidden" name="PRECIO" value="" />
+            </div>
+            <div class="producto" id="SU15x1">
+              <span class="dias"><b>15</b> días<br /><b>1</b> subida / día</span>
+              <span class="precio_tachado"></span>
+              <span class="precio">S/. 25</span>
+              <span class="precio_unitario">S/. 1,67 / día</span>
+              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
+              <input type="hidden" name="ID_PRODUCTO" value="e61qss1s7k5jzzbma7wqm64f8axj5b4c"/>
+              <input type="hidden" name="PRECIO" value="" />
+            </div>
+            <div class="separador_subidas_diarias">3 subidas</div>
+            <div class="producto" id="SU1x3">
+              <span class="dias"><b>1</b> día<br /><b>3</b> subidas</span>
+              <span class="precio_tachado"></span>
+              <span class="precio">S/. 12</span>
+              <span class="precio_unitario">&nbsp;</span>
+              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
+              <input type="hidden" name="ID_PRODUCTO" value="8jflgeei5ozd6licw97rnxktaxnh5let"/>
+              <input type="hidden" name="PRECIO" value="" />
+            </div>
+            <div class="producto" id="SU3X3">
+              <span class="dias"><b>3</b> días<br /><b>3</b> subidas / día</span>
+              <span class="precio_tachado"></span>
+              <span class="precio">S/. 18</span>
+              <span class="precio_unitario">S/. 6 / día</span>
+              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
+              <input type="hidden" name="ID_PRODUCTO" value="9cd79372252089a0c167c969f0da6ba5"/>
+              <input type="hidden" name="PRECIO" value="" />
+            </div>
+            <div class="producto" id="SU7X3">
+              <span class="dias"><b>7</b> días<br /><b>3</b> subidas / día</span>
+              <span class="precio_tachado"></span>
+              <span class="precio">S/. 25</span>
+              <span class="precio_unitario">S/. 3,57 / día</span>
+              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
+              <input type="hidden" name="ID_PRODUCTO" value="ca51efc62aeca9f3c2f9093f013148dd"/>
+              <input type="hidden" name="PRECIO" value="" />
+            </div>
+            <div class="producto" id="SU15X3">
+              <span class="dias"><b>15</b> días<br /><b>3</b> subidas / día</span>
+              <span class="precio_tachado"></span>
+              <span class="precio">S/. 40</span>
+              <span class="precio_unitario">S/. 2,67 / día</span>
+              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
+              <input type="hidden" name="ID_PRODUCTO" value="f2df9584f8600b45427362909a3bf4a5"/>
+              <input type="hidden" name="PRECIO" value="" />
+            </div>
             <div class="separador_subidas_diarias">6 subidas</div>
             <div class="producto" id="SU1X6">
               <span class="dias"><b>1</b> día<br /><b>6</b> subidas</span>
@@ -152,80 +217,6 @@
               <input type="hidden" name="ID_PRODUCTO" value="b5ed86aa3607ea2de594a8f68a4fc86c"/>
               <input type="hidden" name="PRECIO" value="" />
             </div>
-            <div class="separador_subidas_diarias">24 subidas</div>
-            <div class="producto" id="SU1X24">
-              <span class="dias"><b>1</b> día<br /><b>24</b> subidas</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 40</span>
-              <span class="precio_unitario">&nbsp;</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="a2e9b703627865a324b4a83b0f7e34f3"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
-            <div class="producto" id="SU3X24">
-              <span class="dias"><b>3</b> días<br /><b>24</b> subidas / día</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 60</span>
-              <span class="precio_unitario">S/. 20 / día</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="dd0642f098d31e10b0150ae527fe5f5b"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
-            <div class="producto" id="SU7X24">
-              <span class="dias"><b>7</b> días<br /><b>24</b> subidas / día</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 95</span>
-              <span class="precio_unitario">S/. 13,57 / día</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="c0d3763b3685f2b6b1e27dbde9343748"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
-            <div class="producto" id="SU15X24">
-              <span class="dias"><b>15</b> días<br /><b>24</b> subidas / día</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 135</span>
-              <span class="precio_unitario">S/. 9 / día</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="9d325926774abc9039c96e2d3913a400"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
-            <div class="separador_subidas_diarias">48 subidas</div>
-            <div class="producto" id="SU1X48">
-              <span class="dias"><b>1</b> día<br /><b>48</b> subidas</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 60</span>
-              <span class="precio_unitario">&nbsp;</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="16758a2d3d2cfaec806ce85c111fe1f1"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
-            <div class="producto" id="SU3X48">
-              <span class="dias"><b>3</b> días<br /><b>48</b> subidas / día</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 95</span>
-              <span class="precio_unitario">S/. 31,67 / día</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="c456579458d85d2e6982b822cd33cfa5"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
-            <div class="producto" id="SU7X48">
-              <span class="dias"><b>7</b> días<br /><b>48</b> subidas / día</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 135</span>
-              <span class="precio_unitario">S/. 19,29 / día</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="f830904a705237e41593a19bb513ac0e"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
-            <div class="producto" id="SU15X48">
-              <span class="dias"><b>15</b> días<br /><b>48</b> subidas / día</span>
-              <span class="precio_tachado"></span>
-              <span class="precio">S/. 205</span>
-              <span class="precio_unitario">S/. 13,67 / día</span>
-              <span class="seleccionar" (click)="navigateToPublish()">Contratar</span>
-              <input type="hidden" name="ID_PRODUCTO" value="b855b562c91ec0a62fd3fa4be2a9b829"/>
-              <input type="hidden" name="PRECIO" value="" />
-            </div>
           </div>
         </div>
         <div class="historias bloque_multimedia">
@@ -253,11 +244,12 @@
           <div>
             Por un 50% más podrás grabar tu <strong>Historia</strong> cada día en un vídeo.
             <ul>
-              <li> El vídeo se mostrará como portada de tu anuncio en los listados de tu ciudad. </li>
-              <li> Además se mostrará durante ese tiempo rotando junto con otras historias en la zona TOP de Lima Metropolitana. </li>
-              <li> Cada vídeo puede durar hasta <strong>15 segundos</strong>. </li>
-              <li> El vídeo ha de ser <strong>tipo selfie</strong> y debes grabártelo directamente desde tu panel de control. </li>
-              <li> No puedes grabar una pantalla en la que se esté reproduciendo otro vídeo. </li>
+              <li>El vídeo se mostrará como portada de tu anuncio en los listados de tu ciudad.</li>
+              <li>Además se mostrará durante ese tiempo rotando junto con otras historias en la Zona TOP de Lima Metropolitana.</li>
+              <li>Cada vídeo puede durar hasta <strong>15 segundos</strong>.</li>
+              <li>El vídeo ha de ser <strong>tipo selfie</strong> y debes grabártelo directamente desde tu panel de control.</li>
+              <li>No puedes grabar una pantalla en la que se esté reproduciendo otro vídeo.
+              </li>
             </ul>
             <div class="div_duracion_historias">
               Cuantas más subidas al día tengas contratadas, más tiempo se mostrará tu Historia. La duración es diferente en cada ciudad, y
@@ -271,19 +263,11 @@
                 </tr>
                 <tr>
                   <td>6</td>
-                  <td>1 hora</td>
+                  <td>8 horas</td>
                 </tr>
                 <tr>
                   <td>12</td>
-                  <td>2 horas</td>
-                </tr>
-                <tr>
-                  <td>24</td>
-                  <td>4 horas</td>
-                </tr>
-                <tr>
-                  <td>48</td>
-                  <td>8 horas</td>
+                  <td>16 horas</td>
                 </tr>
               </tbody>
             </table>
@@ -293,9 +277,8 @@
       <div id="bloque_no_encontrado">
         <div class="bloque KO">Ciudad no encontrada.</div>
       </div>
-      <input type="hidden" name="sector_precios" id="sector_precios" value="kines" />
-      <input type="hidden" id="url_producto" value="/publicar" />
+      <input type="hidden" name="sector_precios" id="sector_precios" value="trans"/>
+      <input type="hidden" id="url_producto" value="/publicar"/>
     </form>
   </div>
 </main>
-<div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div>

@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-precios',
-  templateUrl: './precios.component.html',
-  styleUrl: './precios.component.css'
+  selector: 'app-precios-videollamadas-mujeres',
+  templateUrl: './precios-videollamadas-mujeres.component.html',
+  styleUrl: './precios-videollamadas-mujeres.component.css'
 })
-export class PreciosComponent {
+export class PreciosVideollamadasMujeresComponent {
 
   constructor(private router: Router) {}
 
@@ -16,6 +16,10 @@ export class PreciosComponent {
 
   navigateToPublish() {
     this.router.navigate(['/publicar']);
+  }
+
+  navigateToPrecios() {
+    this.router.navigate(['/precios']);
   }
 
   navigateToPreciosTravestis() {
@@ -38,9 +42,9 @@ export class PreciosComponent {
     this.router.navigate(['/precios-masajes-hombres']);
   }
 
-  navigateToPreciosVideollamadasMujeres() {
-    this.router.navigate(['/precios-videollamadas-mujeres']);
-  }
+  // navigateToPreciosVideollamadasMujeres() {
+  //   this.router.navigate(['/precios-videollamadas-mujeres']);
+  // }
 
   navigateToPreciosVideollamadasTravestis() {
     this.router.navigate(['/precios-videollamadas-travestis']);

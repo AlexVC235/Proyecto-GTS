@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-precios',
-  templateUrl: './precios.component.html',
-  styleUrl: './precios.component.css'
+  selector: 'app-precios-masajes-travestis',
+  templateUrl: './precios-masajes-travestis.component.html',
+  styleUrl: './precios-masajes-travestis.component.css'
 })
-export class PreciosComponent {
+export class PreciosMasajesTravestisComponent {
 
   constructor(private router: Router) {}
 
@@ -16,6 +16,10 @@ export class PreciosComponent {
 
   navigateToPublish() {
     this.router.navigate(['/publicar']);
+  }
+
+  navigateToPrecios() {
+    this.router.navigate(['/precios']);
   }
 
   navigateToPreciosTravestis() {
@@ -28,10 +32,6 @@ export class PreciosComponent {
 
   navigateToPreciosMasajesMujeres() {
     this.router.navigate(['/precios-masajes-mujeres']);
-  }
-
-  navigateToPreciosMasajesTravestis() {
-    this.router.navigate(['/precios-masajes-travestis']);
   }
 
   navigateToPreciosMasajesHombres() {

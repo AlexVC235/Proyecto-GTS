@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
-  selector: 'app-precios',
-  templateUrl: './precios.component.html',
-  styleUrl: './precios.component.css'
+  selector: 'app-precios-masajes-mujeres',
+  templateUrl: './precios-masajes-mujeres.component.html',
+  styleUrl: './precios-masajes-mujeres.component.css'
 })
-export class PreciosComponent {
+export class PreciosMasajesMujeresComponent {
 
   constructor(private router: Router) {}
 
@@ -18,16 +18,16 @@ export class PreciosComponent {
     this.router.navigate(['/publicar']);
   }
 
+  navigateToPrecios() {
+    this.router.navigate(['/precios']);
+  }
+
   navigateToPreciosTravestis() {
     this.router.navigate(['/precios-travestis']);
   }
 
   navigateToPreciosHombres() {
     this.router.navigate(['/precios-hombres']);
-  }
-
-  navigateToPreciosMasajesMujeres() {
-    this.router.navigate(['/precios-masajes-mujeres']);
   }
 
   navigateToPreciosMasajesTravestis() {

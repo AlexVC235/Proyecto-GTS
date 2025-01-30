@@ -18,7 +18,19 @@ export class AppComponent implements OnInit {
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: any) => {
         // Controla si se debe mostrar la cabecera según la ruta
-        const hiddenRoutes = ['/contactar', '/textos-legales', '/publicar', '/control', '/precios']; // Agrega otras rutas aquí si es necesario
+        const hiddenRoutes = ['/contactar',
+                              '/textos-legales',
+                              '/publicar',
+                              '/control',
+                              '/precios',
+                              '/precios-travestis',
+                              '/precios-hombres',
+                              '/precios-masajes-mujeres',
+                              '/precios-masajes-travestis',
+                              '/precios-masajes-hombres',
+                              '/precios-videollamadas-mujeres',
+                              '/precios-videollamadas-travestis',
+                              '/precios-videollamadas-hombres'];
         this.showHeader = !hiddenRoutes.includes(event.url);
       });
   }

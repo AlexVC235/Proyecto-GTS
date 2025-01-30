@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-precios',
-  templateUrl: './precios.component.html',
-  styleUrl: './precios.component.css'
+  selector: 'app-precios-travestis',
+  templateUrl: './precios-travestis.component.html',
+  styleUrl: './precios-travestis.component.css'
 })
-export class PreciosComponent {
+export class PreciosTravestisComponent {
 
   constructor(private router: Router) {}
 
@@ -18,8 +18,8 @@ export class PreciosComponent {
     this.router.navigate(['/publicar']);
   }
 
-  navigateToPreciosTravestis() {
-    this.router.navigate(['/precios-travestis']);
+  navigateToPrecios() {
+    this.router.navigate(['/precios']);
   }
 
   navigateToPreciosHombres() {
